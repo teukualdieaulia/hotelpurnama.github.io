@@ -1,0 +1,46 @@
+*{
+    margin: 5px;
+    box-sizing: border-box;
+}
+
+body{
+    background: aquamarine;
+    font-family: sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main{
+    display: flex;
+    flex: 1;
+}
+
+.left{
+    background: orange;
+    padding: 5em 0 5em 0;
+    flex: 5 5 150px;
+}
+
+main{
+    background: orange;
+    padding: 5em 0 5em 0;
+    flex: 5 5 150px;
+}
+
+.right{
+    background: orange;
+    padding: 5em 0 5em 0;
+    flex: 5 5 150px;
+}
+
+@media all and (max-widht: 550px){
+    .main{
+        flex-direction: column;
+    }
+    main{
+        padding: 5em 0 5em 0;
+    }
+}
